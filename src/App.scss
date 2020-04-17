@@ -1,0 +1,97 @@
+$main-color: #eb3b5a;
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#root{
+  display: grid;
+  grid-template-columns: 70% 30%;
+}
+
+aside{
+  width: 100%;
+  height: 100%;
+  background-color: $main-color;
+  font-family: 'Open Sans', sans-serif;
+}
+
+main{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+.Product{
+  width: 300px;
+  height: auto;
+  box-shadow: 10px 10px 40px -6px rgba(138,138,138,0.25);
+  margin: 15px;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  p{
+    font-weight: 300;
+    height: 40px;
+    margin: 0 auto;
+  }
+  span{
+    font-size: 1.2em;
+    font-weight: 600;
+  }
+  img{
+    width: 100%;
+    height: auto;
+  }
+  button{
+    border: 0;
+    width: 100%;
+    height: 30px;
+    font-weight: 600;
+    font-size: 1.1em;
+    background-color: $main-color;
+    color: white;
+  }
+  button:focus { outline: thin dotted; }
+}
+
+.Cart{
+  h1{
+    color: white;
+    margin-left: 30px;
+    font-size: 1.6em;
+    font-weight: 300;
+  }
+  h2{
+    color: white;
+    margin-left: 30px;
+    font-size: 1.4em;
+    font-weight: 300;
+  }
+  article{
+    display: grid;
+    grid-template-columns: auto 60% 20%;
+    width: 90%;
+    height: 100px;
+    margin: 10px auto;
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    img{
+      height: 100px;
+      width: auto;
+    }
+    div{
+      margin-left: 5px;
+    }
+    button{
+      height: 30px;
+      width: 30px;
+      background-color: white;
+      color: $main-color;
+      margin-top: 10px;
+      border: 2px solid $main-color;
+      border-radius: 5px;
+    }
+  }
+}
